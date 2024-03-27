@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <title> Physics </title>
+</head>
+
+<body onload="setup()">
+  <div class="params-holder">
+    <div class="param">
+      <div class="text"> Частота<sub>1</sub> (Гц) </div>
+      <input size="4" type="number" step="any" id="f1" class="input" />
+    </div>
+    <div class="param">
+      <div class="text"> Частота<sub>2</sub> (Гц) </div>
+      <input size="4" type="number" step="any" id="f2" class="input" />
+    </div>
+    <div class="param">
+      <div class="text"> Амплитуда (В) </div>
+      <input size="4" type="number" step="any" id="a" class="input" />
+    </div>
+    <div class="param">
+      <button class="button" id="run" onclick="run()">
+        Построить график
+      </button>
+    </div>
+  </div>
+
+  <div class="canvas-holder">
+    <canvas id="canvas" />
+  </div>
+
+  <div class="footer">
+    <div class="heading"> <b> Источники информации </b> </div>
+    <ul>
+      <li> Презентация к седьмой лекции, слайды 16-18 (<a
+          href="https://study.physics.itmo.ru/pluginfile.php/39040/mod_resource/content/1/Lec2_07.%20Vibrations2.pdf">ссылка</a>)
+      </li>
+    </ul>
+
+    Исходный код доступ на <a href="https://github.com/159a207e866f0c3caa98f74593ec5efd/06">github</a>.
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/chartjs-plugin-annotation/3.0.1/chartjs-plugin-annotation.min.js"></script>
+  <script src="index.js"></script>
+</body>
+
+</html>
